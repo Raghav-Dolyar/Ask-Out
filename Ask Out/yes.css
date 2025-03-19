@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensure full height */
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* Gradient background */
+}
+
+.header_text {
+    font-family: 'Nunito', sans-serif;
+    /* Use Google Font */
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Add some space below */
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    /* Responsive image */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .header_text {
+        font-size: 36px;
+        /* Smaller font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header_text {
+        font-size: 28px;
+        /* Even smaller font size for very small screens */
+    }
+}
