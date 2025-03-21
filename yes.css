@@ -1,10 +1,15 @@
 body {
     background: linear-gradient(to right, #ff758c, #ff7eb3);
     font-family: 'Dancing Script', cursive;
-    /* text-align: center; */
+    text-align: center;
     color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 .container {
@@ -13,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5vh;
+    /* border: 1px solid black; */
 }
 
 .header_text {
@@ -21,13 +27,8 @@ body {
 }
 
 .gif_container {
-    /* border: 1px solid black; */
     padding-right: 20px;
-}
-
-.message {
-    font-size: 24px;
-    margin-top: 20px;
+    /* border: 1px solid black; */
 }
 
 /* Media Queries for Responsiveness */
