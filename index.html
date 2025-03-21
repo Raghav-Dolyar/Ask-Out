@@ -11,8 +11,8 @@
         <div>
             <h1 class="header_text">Will You Be My Special One? 💖</h1>
         </div>
-        <div class="gif_container">
-            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHVhem9nb3Bhenp0bTBrcTNpYzNmMzRiYXh2bmkxZ2F3Y3ZlZ2JzaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/SvvfK2dco188Wk4ZTq/giphy.gif"
+        <div class="gif_container" id="img1">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
                 alt="Cute animation" height="450px">
         </div>
         <div class="buttons">
@@ -22,16 +22,27 @@
     </div>
 
     <script>
+        let whyno = document.getElementById("img1")
+        const askOut = document.getElementById("ask-out")
+        let counter = 0
+        const source = ["https://www.icegif.com/wp-content/uploads/2024/09/sad-icegif-10.gif",
+            "https://media.tenor.com/9aX15qAKeQUAAAAi/cute.gif",
+            "https://media.tenor.com/F7AIHf8-ZUYAAAAi/bubu-yier.gif",
+            "https://media.tenor.com/JQylNRYWG9QAAAAi/sad.gif",
+            "https://media.tenor.com/InXCF3yVfGQAAAAi/cat-kitty.gif",
+            "https://media1.tenor.com/m/mn4OTgEH40cAAAAC/hilda-unalive.gif"]
         function nextPage() {
-            // Add loading animation or effect here
             window.location.href = "yes.html";
         }
-
         function moveButton() {
             var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
             var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
             document.getElementById('noButton').style.left = `${x}px`;
             document.getElementById('noButton').style.top = `${y}px`;
+            whyno.innerHTML = `
+         <img src="${source[counter % 6]}" alt="Cute animation" height="400px" width="400px">
+        `
+            counter += 1
         }
     </script>
 </body>
