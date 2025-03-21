@@ -3,8 +3,6 @@ body {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     color: #fff;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,16 +10,22 @@ body {
 }
 
 .container {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2vh;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 .header_text {
     font-size: 48px;
-    /* margin-bottom: 20px; */
+    /* text-align: center; */
+    margin-bottom: 20px;
 }
 
 .buttons {
@@ -38,7 +42,7 @@ body {
     color: rgb(233, 48, 48);
     padding: 15px 32px;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
@@ -65,7 +69,6 @@ body {
     transition: 0.5s;
     background-color: #aaa;
     color: white;
-    position: absolute;
 }
 
 #noButton:hover {
@@ -79,7 +82,7 @@ body {
     }
 
     .header_text {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     img {
